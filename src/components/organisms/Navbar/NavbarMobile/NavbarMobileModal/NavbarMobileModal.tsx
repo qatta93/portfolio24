@@ -1,4 +1,4 @@
-import { SocialMediaLinks } from "@/atoms/SocialMediaLinks";
+import { SocialMediaLinks } from "../../../../atoms/SocialMediaLinks";
 import {
   NavbarWrapper,
   Navbar,

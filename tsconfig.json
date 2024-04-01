@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
+    "baseUrl": "src/",
     "paths": {
-      "@/*": ["./src/components/*"]
+      "@atoms/*": ["components/atoms/*"],
+      "@molecules/*": ["components/molecules/*"],
+      "@organisms/*": ["components/organisms/*"]
     }
   },
 }

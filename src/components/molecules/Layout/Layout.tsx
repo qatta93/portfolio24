@@ -1,5 +1,6 @@
+import { Navbar } from "../../organisms/Navbar";
 import { Footer } from "../Footer";
-import { Navbar } from "@/organisms/Navbar";
+
 import {
   LayoutPositioner,
   LayoutWrapper,

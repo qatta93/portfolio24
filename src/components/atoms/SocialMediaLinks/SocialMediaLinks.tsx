@@ -1,5 +1,3 @@
-import { Footer } from "../../molecules/Footer";
-import { Navbar } from "../../Navbar";
 import { SocialLink, SocialLinksWrapper } from "./SocialMediaLinks.styled";
 import { SocialMediaLinksType } from "./SocialMediaLinks.type";
 
