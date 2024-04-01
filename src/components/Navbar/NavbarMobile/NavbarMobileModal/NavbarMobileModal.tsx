@@ -1,3 +1,4 @@
+import { SocialMediaLinks } from "../../../SocialMediaLinks";
 import {
   NavbarWrapper,
   Navbar,
@@ -6,9 +7,7 @@ import {
 } from "./NavbarMobileModal.styled";
 import { NavbarMobileModalType } from "./NavbarMobileModal.type";
 
-export const NavbarMobileModal: NavbarMobileModalType = ({
-  isNavbarMobileOpen,
-}) => (
+export const NavbarMobileModal: NavbarMobileModalType = ({ isNavbarMobileOpen }) => (
   <NavbarWrapper visibility={isNavbarMobileOpen}>
     <Navbar>
       <StyledLink to="about">about</StyledLink>
@@ -21,6 +20,7 @@ export const NavbarMobileModal: NavbarMobileModalType = ({
         <img src="images/download.png" alt="download" />
         CV
       </StyledDownloadLink>
+      <SocialMediaLinks />
     </Navbar>
   </NavbarWrapper>
 );
