@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
 
  * { 
   overflow-y:scroll
+  max-width: 100vw;
   }
 
   *::-webkit-scrollbar {

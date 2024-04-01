@@ -1,5 +1,6 @@
 import {
   HeroSectionIntroduction,
+  HeroSectionSplineModel,
   HeroSectionSubtitle,
   HeroSectionTitle,
   HeroSectionWrapper,
@@ -11,11 +12,13 @@ export const HeroSection = () => {
       <HeroSectionIntroduction>
         <HeroSectionTitle>
           Hey there!
-          <br />
-          I am Patrycja.
+          <br />I am Patrycja.
         </HeroSectionTitle>
         <HeroSectionSubtitle>CREATIVE FRONTEND DEVELOPER</HeroSectionSubtitle>
       </HeroSectionIntroduction>
+      <HeroSectionSplineModel>
+        <p>spline model</p>
+      </HeroSectionSplineModel>
     </HeroSectionWrapper>
   );
 };
