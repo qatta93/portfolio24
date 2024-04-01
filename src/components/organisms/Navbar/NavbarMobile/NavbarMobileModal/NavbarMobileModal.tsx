@@ -1,4 +1,4 @@
-import { SocialMediaLinks } from "../../../SocialMediaLinks";
+import { SocialMediaLinks } from "@/atoms/SocialMediaLinks";
 import {
   NavbarWrapper,
   Navbar,
@@ -7,7 +7,9 @@ import {
 } from "./NavbarMobileModal.styled";
 import { NavbarMobileModalType } from "./NavbarMobileModal.type";
 
-export const NavbarMobileModal: NavbarMobileModalType = ({ isNavbarMobileOpen }) => (
+export const NavbarMobileModal: NavbarMobileModalType = ({
+  isNavbarMobileOpen,
+}) => (
   <NavbarWrapper visibility={isNavbarMobileOpen}>
     <Navbar>
       <StyledLink to="about">about</StyledLink>

@@ -1,5 +1,5 @@
-import { HeroSection } from "./components/HeroSection";
-import { Layout } from "./components/Layout";
+import { HeroSection } from "./components/organisms/HeroSection";
+import { Layout } from "./components/molecules/Layout";
 
 function App() {
   return (
