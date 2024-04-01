@@ -9,6 +9,10 @@ export const NavbarDesktopWrapper = styled.header`
   height: 48px;
   display: flex;
   justify-content: end;
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
 `;
 
 export const Navbar = styled.nav`
@@ -19,6 +23,10 @@ export const Navbar = styled.nav`
 
   & > li {
     list-style-type: none;
+  }
+
+  @media (max-width: 768px) {
+    gap: 30px;
   }
 `;
 

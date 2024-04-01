@@ -6,18 +6,39 @@ export const HeroSectionWrapper = styled.section`
   height: 100%;
   justify-content: space-between;
   margin: auto 0;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
-export const HeroSectionIntroduction = styled.article``;
+export const HeroSectionIntroduction = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 350px;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-top: 50px;
+  }
+`;
 
 export const HeroSectionTitle = styled.h1`
   font-size: 64px;
+  margin-bottom: 30px;
   font-weight: medium;
+
+  @media (max-width: 768px) {
+    font-size: 48px;
+  }
 `;
 
 export const HeroSectionSubtitle = styled.h2`
-  font-size: 24px;
-  font-weight: light;
-`;
+  font-size: 18px;
+  font-weight: lighter;
 
-export const HeroSectionSplineModel = styled.article``;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+`;

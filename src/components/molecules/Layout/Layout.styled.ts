@@ -8,6 +8,10 @@ export const LayoutPositioner = styled.section`
 export const LayoutWrapper = styled.div`
   padding: 0 70px;
 
+  @media (max-width: 1000px) {
+    padding: 0 40px;
+  }
+
   @media (max-width: 480px) {
     padding: 20px;
   }
@@ -17,4 +21,5 @@ export const MainComponent = styled.main`
   height: 100%;
   min-height: 100dvh;
   display: flex;
+  overflow-x: hidden;
 `;

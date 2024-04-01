@@ -1,0 +1,1 @@
+export { SplineModel } from "./SplineModel";

@@ -1,10 +1,10 @@
 import {
   HeroSectionIntroduction,
-  HeroSectionSplineModel,
   HeroSectionSubtitle,
   HeroSectionTitle,
   HeroSectionWrapper,
 } from "./HeroSection.styled";
+import { SplineModel } from "./SplineModel";
 
 export const HeroSection = () => {
   return (
@@ -16,9 +16,7 @@ export const HeroSection = () => {
         </HeroSectionTitle>
         <HeroSectionSubtitle>CREATIVE FRONTEND DEVELOPER</HeroSectionSubtitle>
       </HeroSectionIntroduction>
-      <HeroSectionSplineModel>
-        <p>spline model</p>
-      </HeroSectionSplineModel>
+      <SplineModel />
     </HeroSectionWrapper>
   );
 };
