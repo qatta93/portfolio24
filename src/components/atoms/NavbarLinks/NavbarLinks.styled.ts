@@ -33,7 +33,7 @@ export const StyledLink = styled(LinkBase)`
 `;
 
 export const StyledDownloadLink = styled(LinkBase)`
-  background-color: #b3ffb6;
+  background-color: ${({ theme }) => theme.colors.darkSecondary};
   padding: 5px 8px;
   border-radius: 10px;
 

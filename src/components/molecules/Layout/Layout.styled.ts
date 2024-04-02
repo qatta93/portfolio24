@@ -10,16 +10,17 @@ export const LayoutWrapper = styled.div``;
 export const MainComponent = styled.main`
   height: 100%;
   min-height: 100dvh;
+  max-width: ${({ theme }) => theme.maxWidth};
   display: flex;
   overflow-x: hidden;
 
-  padding: 0 70px;
+  padding: ${({ theme }) => theme.paddingHorizontal.desktop};
 
-  @media (max-width: 1000px) {
-    padding: 0 40px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    padding: ${({ theme }) => theme.paddingHorizontal.tablet};
   }
 
-  @media (max-width: 480px) {
-    padding: 20px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    padding: ${({ theme }) => theme.paddingHorizontal.mobile};
   }
 `;

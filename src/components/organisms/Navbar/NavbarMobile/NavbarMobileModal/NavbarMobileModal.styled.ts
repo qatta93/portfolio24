@@ -13,7 +13,7 @@ export const NavbarWrapper = styled.header<{ visibility: any }>`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 50;
+  z-index: ${({ theme }) => theme.zIndex.modal};
   background-color: white;
   transition: all 0.5s ease-out;
   transform: ${(props) =>

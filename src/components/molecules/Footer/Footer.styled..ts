@@ -13,7 +13,7 @@ export const FooterWrapper = styled.footer`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #b3ffb6;
+  background-color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const FooterElements = styled.div`
@@ -32,15 +32,15 @@ export const StyledNavbarLinks = styled(NavbarLinks)`
   font-size: 14px;
   gap: 40px;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     gap: 30px;
     font-size: 12px;
   }
 `;
 
 export const Author = styled.p`
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 20px;
   text-align: center;
-  color: #b3b3b3;
+  color: ${({ theme }) => theme.colors.lightGray};
 `;

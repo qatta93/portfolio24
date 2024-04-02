@@ -6,6 +6,6 @@ export const NavbarMobileContainer = styled.section`
     right: 15px;
     top: 15px;
     height: 48px;
-    z-index: 60;
+    z-index: ${({ theme }) => theme.zIndex.menuIcon};
   }
 `;

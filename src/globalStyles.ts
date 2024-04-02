@@ -21,10 +21,10 @@ const GlobalStyle = createGlobalStyle`
     height: 100dvh;
     margin: 0;
     padding: 0;
-    background-color: #F5F5F5;
+    background-color: ${({ theme }) => theme.colors.primary};
     overflow-x: hidden;
-    font-family: Poppins, sans-serif;
-    color: #1E1E1E;
+    font-family: ${({ theme }) => theme.fonts.default};
+    color: ${({ theme }) => theme.colors.lightBlack};
   }
 `;
 

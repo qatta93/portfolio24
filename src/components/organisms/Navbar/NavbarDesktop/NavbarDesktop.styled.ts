@@ -1,17 +1,16 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const NavbarDesktopWrapper = styled.header`
   position: fixed;
-  padding: 0 70px;
+  padding: ${({ theme }) => theme.paddingHorizontal.desktop};
   left: 0;
   right: 0;
   height: 48px;
   display: flex;
   justify-content: end;
 
-  @media (max-width: 768px) {
-    padding: 0 20px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    padding: ${({ theme }) => theme.paddingHorizontal.tablet};
   }
 `;
 
