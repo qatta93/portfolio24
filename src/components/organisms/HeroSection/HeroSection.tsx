@@ -1,3 +1,4 @@
+import { Button } from "../../atoms/Button";
 import {
   HeroSectionIntroduction,
   HeroSectionSubtitle,
@@ -15,7 +16,8 @@ export const HeroSection = () => {
           <br />I am Patrycja.
         </HeroSectionTitle>
         <HeroSectionSubtitle>CREATIVE FRONTEND DEVELOPER</HeroSectionSubtitle>
-      </HeroSectionIntroduction>
+        <Button text={`Let's talk`} />
+     </HeroSectionIntroduction>
       <SplineModel />
     </HeroSectionWrapper>
   );

@@ -26,7 +26,8 @@ export const HeroSectionIntroduction = styled.article`
 
 export const HeroSectionTitle = styled.h1`
   font-size: 64px;
-  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
   font-weight: medium;
 
   @media (max-width: 768px) {
@@ -37,6 +38,7 @@ export const HeroSectionTitle = styled.h1`
 export const HeroSectionSubtitle = styled.h2`
   font-size: 18px;
   font-weight: lighter;
+  margin-bottom: 50px;
 
   @media (max-width: 768px) {
     font-size: 16px;
