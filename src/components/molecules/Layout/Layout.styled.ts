@@ -5,7 +5,14 @@ export const LayoutPositioner = styled.section`
   width: 100%;
 `;
 
-export const LayoutWrapper = styled.div`
+export const LayoutWrapper = styled.div``;
+
+export const MainComponent = styled.main`
+  height: 100%;
+  min-height: 100dvh;
+  display: flex;
+  overflow-x: hidden;
+
   padding: 0 70px;
 
   @media (max-width: 1000px) {
@@ -15,11 +22,4 @@ export const LayoutWrapper = styled.div`
   @media (max-width: 480px) {
     padding: 20px;
   }
-`;
-
-export const MainComponent = styled.main`
-  height: 100%;
-  min-height: 100dvh;
-  display: flex;
-  overflow-x: hidden;
 `;

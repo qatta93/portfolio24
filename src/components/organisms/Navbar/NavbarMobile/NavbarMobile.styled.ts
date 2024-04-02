@@ -6,6 +6,6 @@ export const NavbarMobileContainer = styled.section`
     right: 15px;
     top: 15px;
     height: 48px;
-    z-index: 30;
+    z-index: 60;
   }
 `;

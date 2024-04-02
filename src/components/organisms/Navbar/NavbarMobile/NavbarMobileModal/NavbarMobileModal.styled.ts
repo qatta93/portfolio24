@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { NavbarLinks } from "../../../../atoms/NavbarLinks";
+import { SocialMediaLinks } from "../../../../atoms/SocialMediaLinks";
 
 export const NavbarWrapper = styled.header<{ visibility: any }>`
   position: fixed;
@@ -12,39 +13,23 @@ export const NavbarWrapper = styled.header<{ visibility: any }>`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 10;
+  z-index: 50;
   background-color: white;
   transition: all 0.5s ease-out;
   transform: ${(props) =>
     props.visibility ? "translateX(0px)" : "translateX(400px)"};
 `;
 
-export const Navbar = styled.nav`
+export const StyledNavbarLinks = styled(NavbarLinks)`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
   font-size: 25px;
-
-  & > li {
-    list-style-type: none;
-  }
 `;
 
-export const LinkBase = styled(Link)`
-  text-decoration: none;
-  color: inherit;
-`;
-
-export const StyledLink = styled(LinkBase)``;
-
-export const StyledDownloadLink = styled(LinkBase)`
-  background-color: #b3ffb6;
-  padding: 5px 8px;
-  border-radius: 10px;
-
-  img {
-    height: 18px;
-    margin-right: 5px;
-  }
+export const StyledSocialMediaLinks = styled(SocialMediaLinks)`
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
 `;

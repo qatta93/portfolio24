@@ -29,30 +29,3 @@ export const Navbar = styled.nav`
     gap: 30px;
   }
 `;
-
-export const LinkBase = styled(Link)`
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.2s;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-`;
-
-export const StyledLink = styled(LinkBase)`
-  &:hover {
-    text-decoration: underline 3px #b3ffb6;
-  }
-`;
-
-export const StyledDownloadLink = styled(LinkBase)`
-  background-color: #b3ffb6;
-  padding: 5px 8px;
-  border-radius: 10px;
-
-  img {
-    height: 15px;
-    margin-right: 5px;
-  }
-`;

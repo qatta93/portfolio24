@@ -1,5 +1,22 @@
-import { FooterWrapper } from "./Footer.styled.";
+import {
+  FooterWrapper,
+  FooterElements,
+  StyledSocialMediaLinks,
+  StyledNavbarLinks,
+  Author,
+} from "./Footer.styled.";
 
 export const Footer = () => {
-  return <FooterWrapper>Footer</FooterWrapper>;
+  let year = new Date().getFullYear();
+  return (
+    <FooterWrapper>
+      <FooterElements>
+        <StyledSocialMediaLinks />
+        <StyledNavbarLinks />
+        <Author>
+          ©{year} Patrycja Panasiuk | All Rights Reserved
+        </Author>
+      </FooterElements>
+    </FooterWrapper>
+  );
 };

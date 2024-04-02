@@ -1,9 +1,9 @@
 import { SocialLink, SocialLinksWrapper } from "./SocialMediaLinks.styled";
 import { SocialMediaLinksType } from "./SocialMediaLinks.type";
 
-export const SocialMediaLinks: SocialMediaLinksType = () => {
+export const SocialMediaLinks: SocialMediaLinksType = ({className}) => {
   return (
-    <SocialLinksWrapper>
+    <SocialLinksWrapper className={className ? className : ""}>
       <SocialLink
         to="https://www.linkedin.com/in/patrycjapanasiuk/"
         target="_blank">

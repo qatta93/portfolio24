@@ -1,6 +1,8 @@
-import { ReactElement, ReactNode } from "react";
+import { ReactElement } from "react";
 
-interface SocialMediaLinksProps {}
+interface SocialMediaLinksProps {
+  className?: string;
+}
 
 export type SocialMediaLinksType = (
   props: SocialMediaLinksProps
