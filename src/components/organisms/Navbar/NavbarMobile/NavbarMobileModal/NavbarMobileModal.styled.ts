@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { NavbarLinks } from "../../../../atoms/NavbarLinks";
 import { SocialMediaLinks } from "../../../../atoms/SocialMediaLinks";
 
-export const NavbarWrapper = styled.header<{ visibility: any }>`
+export const NavbarWrapper = styled.header<{ visibility: boolean }>`
   position: fixed;
   top: 0;
   bottom: 0;

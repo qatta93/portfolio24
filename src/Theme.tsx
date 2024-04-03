@@ -7,6 +7,7 @@ const theme = {
     darkSecondary: "#83FA88",
     lightBlack: "#1E1E1E",
     lightGray: "#b3b3b3",
+    violet: "#873FBF",
   },
   fonts: {
     default: "Poppins, sans-serif",
