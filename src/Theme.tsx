@@ -11,6 +11,7 @@ const theme = {
   },
   fonts: {
     default: "Poppins, sans-serif",
+    handWritting: "Kalam, cursive",
   },
   zIndex: {
     background: -1,

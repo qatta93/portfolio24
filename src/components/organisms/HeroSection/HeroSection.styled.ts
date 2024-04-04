@@ -20,7 +20,8 @@ export const HeroSectionIntroduction = styled.article`
 
   @media (max-width: 768px) {
     text-align: center;
-    margin-top: 50px;
+    align-items: center;
+    padding-top: 100px;
   }
 `;
 

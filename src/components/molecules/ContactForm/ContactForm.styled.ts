@@ -20,12 +20,16 @@ export const ContactFormComponent = styled.form`
   position: relative;
   gap: 20px;
   width: 100%;
-  max-width: 450px;
   height: auto;
   border-radius: 20px;
   padding: 40px;
   box-sizing: border-box;
   background-color: ${({ theme }) => theme.colors.primary};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    padding: 30px;
+
+  }
 `;
 
 const inputsStyle = css`
