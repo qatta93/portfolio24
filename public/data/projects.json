@@ -1,0 +1,89 @@
+[
+  {
+    "id": 1,
+    "title": "Motion / UI Design",
+    "technologies": [
+      "Adobe After Effects",
+      "Illustrator",
+      "Puppet Tools",
+      "Lottie"
+    ],
+    "img": "images/motion.png",
+    "description": "Some samples of my motion design work",
+    "links": [{ "live": "www.google.com" }]
+  },
+  {
+    "id": 2,
+    "title": "Noterat.io",
+    "technologies": ["Figma", "React"],
+    "description": "\"It's a user-friendly application that distributes and analyzes the available data on the Swedish Parliaments (Riksdag) API and website. The aim is to create an informative and neutral platform where the users can easily access and control specific documents and political activity without ending up in filter bubbles.\"",
+    "img": "images/noterat.png",
+    "links": [
+      {
+        "figma": "https://www.figma.com/file/cU8u60tRB7Ms8nir4ZhVaH/noterat.io?node-id=0%3A1&t=rrv0I4GUN4q3iFJd-1"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "3D SHOP",
+    "technologies": [
+      "Figma",
+      "Next.js",
+      "Three.js",
+      "Prisma",
+      "TypeScript",
+      "Tailwind",
+      "Vercel",
+      "CI/CD"
+    ],
+    "description": "\"This full stack app was created in order to make online shopping more user friendly. 3D models are more appealing for potential customers.\"",
+    "img": "images/shopily.png",
+    "links": [
+      {
+        "figma": "https://www.figma.com/file/OmRUw3CzKFpQCAHrUB17dJ/Untitled?node-id=0%3A1&t=byTEmUGZ3FZUNXIj-1"
+      },
+      { "code": "https://github.com/qatta93/3d-shop-new" },
+      { "live": "https://3d-shop-new.vercel.app/" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Travel Buddy",
+    "technologies": [
+      "React",
+      "Redux",
+      "TypeScript",
+      "Node.JS",
+      "Express.JS",
+      "Passport.JS",
+      "OAuth",
+      "PostreSQL",
+      "Docker",
+      "Heroku"
+    ],
+    "description": "\"The app was created as final project in </salt> bootcamp. My colleagues and I did that project from scratch in 10 days. It was conceived for travelers that wish to find a buddy to travel with. They can either create trips and wait for people to join them, or search through other people's trips and join them in their adventures.\"",
+    "img": "images/travel-buddy.png",
+    "links": [
+      {
+        "figma": "https://www.figma.com/file/jfO04g9WdOwZs3lWBxPOPl/Travel-Buddy?node-id=0%3A1&t=iJ2FNima8qsq8l4O-1"
+      },
+      { "live": "https://travel-buddy-application.netlify.app/" },
+      { "code": "https://github.com/qatta93/travel_buddy" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Portfolio",
+    "technologies": [
+      "Figma",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Styled Components"
+    ],
+    "description": "\"That's the website that you are currently looking on :)\"",
+    "img": "images/homia.png",
+    "links": [{ "code": "https://github.com/qatta93/portfolio24" }]
+  }
+]

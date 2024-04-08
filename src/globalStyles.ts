@@ -26,6 +26,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${({ theme }) => theme.fonts.default};
     color: ${({ theme }) => theme.colors.lightBlack};
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 export default GlobalStyle;

@@ -37,7 +37,9 @@ export const SectionDescription = styled.p<{ isContactSection: boolean }>`
   font-size: 40px;
   margin: 10px 0 0 90px;
   font-family: ${(props) =>
-    props.isContactSection ? "Kalam, cursive" : "Poppins, sans-serif"};
+    props.isContactSection
+      ? props.theme.fonts.handWritting
+      : props.theme.fonts.default};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     font-size: 30px;

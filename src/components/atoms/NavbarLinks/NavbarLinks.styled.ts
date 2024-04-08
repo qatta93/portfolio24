@@ -17,8 +17,6 @@ export const Navbar = styled.nav`
 `;
 
 export const LinkBase = styled(Link)`
-  text-decoration: none;
-  color: inherit;
   transition: transform 0.2s;
 
   &:hover {
