@@ -9,7 +9,7 @@ import { ContactSectionType } from "./ContactSection.type";
 
 export const ContactSection: ContactSectionType = () => {
   return (
-    <ContactSectionWrapper>
+    <ContactSectionWrapper id="contact">
       <FormContainer>
         <SectionHeader
           sectionTitle="contact"

@@ -1,4 +1,4 @@
-import { ProjectCard } from "../../molecules/ProjectCard";
+import { scrollToSection } from "helpers/scrollToSection";
 import { Button } from "../../atoms/Button";
 import {
   HeroSectionIntroduction,
@@ -17,7 +17,10 @@ export const HeroSection = () => {
           <br />I am Patrycja.
         </HeroSectionTitle>
         <HeroSectionSubtitle>CREATIVE FRONTEND DEVELOPER</HeroSectionSubtitle>
-        <Button text={`Let's talk`} />
+        <Button
+          text={`Let's talk`}
+          onClick={() => scrollToSection("contact")}
+        />
       </HeroSectionIntroduction>
       <SplineModel />
     </HeroSectionWrapper>

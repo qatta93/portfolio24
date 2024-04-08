@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const Navbar = styled.nav`
   display: flex;
@@ -16,21 +15,25 @@ export const Navbar = styled.nav`
   }
 `;
 
-export const LinkBase = styled(Link)`
+export const ButtonBase = styled.button`
   transition: transform 0.2s;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  font-size: 20px;
 
   &:hover {
     transform: scale(1.05);
   }
 `;
 
-export const StyledLink = styled(LinkBase)`
+export const StyledButton = styled(ButtonBase)`
   &:hover {
     text-decoration: underline 3px #b3ffb6;
   }
 `;
 
-export const StyledDownloadLink = styled(LinkBase)`
+export const StyledDownloadLink = styled(ButtonBase)`
   background-color: ${({ theme }) => theme.colors.darkSecondary};
   padding: 5px 8px;
   border-radius: 10px;

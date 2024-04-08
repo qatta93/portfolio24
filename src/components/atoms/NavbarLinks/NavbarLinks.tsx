@@ -1,12 +1,19 @@
-import { Navbar, StyledLink, StyledDownloadLink } from "./NavbarLinks.styled";
+import { scrollToSection } from "helpers/scrollToSection";
+import { Navbar, StyledButton, StyledDownloadLink } from "./NavbarLinks.styled";
 import { NavbarLinksType } from "./NavbarLinks.type";
 
 export const NavbarLinks: NavbarLinksType = ({ className }) => {
   return (
     <Navbar className={className ? className : ""}>
-      <StyledLink to="about">about</StyledLink>
-      <StyledLink to="projects">projects</StyledLink>
-      <StyledLink to="contact">contact</StyledLink>
+      <StyledButton onClick={() => scrollToSection("about")}>
+        about
+      </StyledButton>
+      <StyledButton onClick={() => scrollToSection("projects")}>
+        projects
+      </StyledButton>
+      <StyledButton onClick={() => scrollToSection("contact")}>
+        contact
+      </StyledButton>
       {/* <StyledDownloadLink
         href="pdf/Patrycja_Panasiuk_CV_EN.pdf"
         download="Patrycja_Panasiuk_CV_EN.pdf"
