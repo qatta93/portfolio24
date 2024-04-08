@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
  * { 
   overflow-y:scroll
   max-width: 100vw;
+  box-sizing: border-box;
   }
 
   *::-webkit-scrollbar {

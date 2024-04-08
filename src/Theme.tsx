@@ -18,6 +18,7 @@ const theme = {
     background: -1,
     button: 10,
     modal: 50,
+    navigation: 40,
     menuIcon: 60,
   },
   paddingHorizontal: {

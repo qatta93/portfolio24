@@ -18,7 +18,7 @@ export const HeroSection = () => {
         </HeroSectionTitle>
         <HeroSectionSubtitle>CREATIVE FRONTEND DEVELOPER</HeroSectionSubtitle>
         <Button text={`Let's talk`} />
-     </HeroSectionIntroduction>
+      </HeroSectionIntroduction>
       <SplineModel />
     </HeroSectionWrapper>
   );
