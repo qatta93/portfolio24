@@ -6,10 +6,10 @@ import { useNavbarLink } from "./NavbarLinks.hook";
 export const NavbarLinks: NavbarLinksType = ({ className }) => {
   const { currentSectionIndex } = useNavbarLink();
 
-  console.log(currentSectionIndex);
-
   return (
-    <Navbar className={className ? className : ""} activeSection={currentSectionIndex}>
+    <Navbar
+      className={className ? className : ""}
+      activeSection={currentSectionIndex}>
       <StyledButton onClick={() => scrollToSection("about")}>
         about
       </StyledButton>
@@ -19,13 +19,13 @@ export const NavbarLinks: NavbarLinksType = ({ className }) => {
       <StyledButton onClick={() => scrollToSection("contact")}>
         contact
       </StyledButton>
-      {/* <StyledDownloadLink
+      <StyledDownloadLink
         href="pdf/Patrycja_Panasiuk_CV_EN.pdf"
         download="Patrycja_Panasiuk_CV_EN.pdf"
         target="_blank">
         <img src="images/download.png" alt="download" />
         CV
-      </StyledDownloadLink> */}
+      </StyledDownloadLink>
     </Navbar>
   );
 };

@@ -19,7 +19,7 @@ export const Navbar = styled.nav<{ activeSection: number }>`
   }
 `;
 
-export const ButtonBase = styled.button`
+export const StyledButton = styled.button`
   transition: transform 0.2s;
   border: none;
   cursor: pointer;
@@ -27,20 +27,21 @@ export const ButtonBase = styled.button`
   font-size: 20px;
 
   &:hover {
+    text-decoration: underline 3px #b3ffb6;
     transform: scale(1.05);
   }
 `;
 
-export const StyledButton = styled(ButtonBase)`
-  &:hover {
-    text-decoration: underline 3px #b3ffb6;
-  }
-`;
-
-export const StyledDownloadLink = styled(ButtonBase)`
+export const StyledDownloadLink = styled.a`
   background-color: ${({ theme }) => theme.colors.darkSecondary};
   padding: 5px 8px;
   border-radius: 10px;
+  transition: transform 0.2s;
+  font-size: 20px;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   img {
     height: 15px;
