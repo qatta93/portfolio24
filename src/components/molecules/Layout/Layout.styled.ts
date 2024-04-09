@@ -16,6 +16,7 @@ export const MainComponent = styled.main`
     overflow-x: hidden;
 
     padding: ${({ theme }) => theme.paddingHorizontal.desktop};
+    padding-top: 50px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
       padding: ${({ theme }) => theme.paddingHorizontal.tablet};

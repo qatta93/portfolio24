@@ -17,7 +17,6 @@ export const ContactSectionWrapper = styled.section`
 
 export const FormContainer = styled.article`
   display: flex;
-  padding-top: 50px;
   flex-direction: column;
   gap: 30px;
   width: 100%;
