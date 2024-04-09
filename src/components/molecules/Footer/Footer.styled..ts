@@ -32,6 +32,10 @@ export const StyledNavbarLinks = styled(NavbarLinks)`
   font-size: 14px;
   gap: 40px;
 
+  & > button {
+    text-decoration: none!important;
+  }
+
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     gap: 30px;
     font-size: 12px;
