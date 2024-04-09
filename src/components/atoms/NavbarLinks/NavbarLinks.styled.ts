@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Navbar = styled.nav`
+export const Navbar = styled.nav<{ activeSection: number }>`
   display: flex;
   align-items: center;
   gap: 70px;
@@ -8,6 +8,10 @@ export const Navbar = styled.nav`
 
   & > li {
     list-style-type: none;
+  }
+
+  & > button:nth-child(${(props) => props.activeSection}) {
+    text-decoration: underline 3px #b3ffb6;
   }
 
   @media (max-width: 768px) {

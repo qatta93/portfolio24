@@ -1,10 +1,15 @@
 import { scrollToSection } from "helpers/scrollToSection";
 import { Navbar, StyledButton, StyledDownloadLink } from "./NavbarLinks.styled";
 import { NavbarLinksType } from "./NavbarLinks.type";
+import { useNavbarLink } from "./NavbarLinks.hook";
 
 export const NavbarLinks: NavbarLinksType = ({ className }) => {
+  const { currentSectionIndex } = useNavbarLink();
+
+  console.log(currentSectionIndex);
+
   return (
-    <Navbar className={className ? className : ""}>
+    <Navbar className={className ? className : ""} activeSection={currentSectionIndex}>
       <StyledButton onClick={() => scrollToSection("about")}>
         about
       </StyledButton>
