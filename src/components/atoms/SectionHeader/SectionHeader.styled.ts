@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SectionHeaderWrapper = styled.div`
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
 `;
 
 export const TitleContainer = styled.div`
@@ -34,7 +34,7 @@ export const SectionTitle = styled.h3`
 
 export const SectionDescription = styled.p<{ isContactSection: boolean }>`
   font-weight: medium;
-  font-size: 40px;
+  font-size: 30px;
   margin: 10px 0 0 90px;
   font-family: ${(props) =>
     props.isContactSection

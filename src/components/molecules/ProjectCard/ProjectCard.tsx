@@ -34,7 +34,11 @@ export const ProjectCard: ProjectCardType = ({
         const link = Object.values(linkData)[0];
         const linkType = Object.keys(linkData)[0];
         return (
-          <LinkButton key={link} href={link} linkType={linkType}>
+          <LinkButton
+            key={link}
+            href={link}
+            linkType={linkType}
+            target="_blank">
             {(linkType === "live" && linkType) || (
               <img src={`images/${linkType}.png`} alt={linkType} />
             )}

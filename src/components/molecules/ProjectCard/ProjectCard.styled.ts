@@ -12,7 +12,7 @@ export const ProjectCardWrapper = styled.section`
 export const StyledImage = styled.img`
   width: 100%;
   object-fit: cover;
-  height: 300px;
+  height: 250px;
   border-radius: 13px;
   background-color: green;
 `;
@@ -34,16 +34,18 @@ export const ProjectTech = styled.span`
   border: 1px solid ${({ theme }) => theme.colors.lightGray};
   border-radius: 10px;
   margin: 0 5px 5px 0;
-  font-size: 14px;
+  font-size: 12px;
 `;
 
 export const ProjectDescription = styled.p`
+  margin-top: 7px;
+  font-size: 14px;
   color: ${({ theme }) => theme.colors.darkGray};
 `;
 
 export const ProjectCardLinks = styled.div`
   position: absolute;
-  bottom: 15px;
+  bottom: 12px;
   right: 10px;
   left: 10px;
   display: flex;
@@ -57,6 +59,7 @@ export const LinkButton = styled.a<{ linkType: string }>`
   align-items: center;
   justify-content: center;
   padding: 8px 15px;
+  height: 43px;
   border-radius: 8px;
   color: white;
   font-weight: bold;
