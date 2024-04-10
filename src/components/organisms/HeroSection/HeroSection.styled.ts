@@ -6,6 +6,8 @@ export const HeroSectionWrapper = styled.section`
   height: 100%;
   justify-content: space-between;
   margin: auto 0;
+  max-width: ${({ theme }) => theme.maxWidth};
+  align-items: center;
 
   @media (max-width: 768px) {
     flex-direction: column;

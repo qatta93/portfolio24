@@ -45,6 +45,3 @@ export const ProjectsSection: ProjectsSectionType = () => {
     </ProjectsSectionWrapper>
   );
 };
-
-// zachodzenie
-

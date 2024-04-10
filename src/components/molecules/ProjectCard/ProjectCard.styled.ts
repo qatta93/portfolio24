@@ -4,7 +4,7 @@ export const ProjectCardWrapper = styled.section`
   position: relative;
   background-color: white;
   width: 350px;
-  height: 550px;
+  height: 530px;
   border-radius: 20px;
   padding: 10px;
 `;

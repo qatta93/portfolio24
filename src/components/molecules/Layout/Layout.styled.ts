@@ -11,12 +11,12 @@ export const MainComponent = styled.main`
   & > section {
     height: 100%;
     min-height: 100dvh;
-    max-width: ${({ theme }) => theme.maxWidth};
     display: flex;
+    margin: 0 auto;
     overflow-x: hidden;
 
     padding: ${({ theme }) => theme.paddingHorizontal.desktop};
-    padding-top: 50px;
+    padding-top: 40px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
       padding: ${({ theme }) => theme.paddingHorizontal.tablet};

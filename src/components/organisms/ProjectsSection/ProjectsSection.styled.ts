@@ -5,6 +5,7 @@ export const ProjectsSectionWrapper = styled.section`
   width: 100%;
   height: 100%;
   background-color: ${({ theme }) => theme.colors.primary};
+  max-width: ${({ theme }) => theme.maxWidth};
   flex-direction: column;
 `;
 
@@ -40,7 +41,7 @@ export const StyledSwiper = styled(Swiper)`
     display: flex;
     gap: 10px;
     justify-content: center;
-    margin-top: 30px;
+    margin: 20px 0 20px 0;
   }
   .swiper-pagination-bullet {
     display: block;
@@ -50,6 +51,7 @@ export const StyledSwiper = styled(Swiper)`
     height: 20px;
     border: 1px solid ${({ theme }) => theme.colors.darkGray};
     border-radius: 20px;
+    cursor: pointer;
   }
 
   .swiper-pagination-bullet-active {
