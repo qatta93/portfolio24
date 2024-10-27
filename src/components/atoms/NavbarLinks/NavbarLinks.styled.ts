@@ -34,7 +34,7 @@ export const StyledButton = styled.button`
 
 export const StyledDownloadLink = styled.a`
   background-color: ${({ theme }) => theme.colors.darkSecondary};
-  padding: 5px 8px;
+  padding: 5px 18px;
   border-radius: 10px;
   transition: transform 0.2s;
   font-size: 20px;

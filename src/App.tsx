@@ -13,10 +13,9 @@ function App() {
   useEffect(() => {
     const handleLoad = () => {
       setIsExiting(true);
-      // Remove loader after animation completes
       setTimeout(() => {
         setIsLoading(false);
-      }, 800); // Match animation duration
+      }, 800); 
     };
 
     if (document.readyState === 'complete') {
