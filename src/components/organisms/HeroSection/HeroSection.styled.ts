@@ -8,6 +8,7 @@ export const HeroSectionWrapper = styled.section`
   margin: auto 0;
   max-width: ${({ theme }) => theme.maxWidth};
   align-items: center;
+  position: relative;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -38,12 +39,23 @@ export const HeroSectionTitle = styled.h1`
   }
 `;
 
-export const HeroSectionSubtitle = styled.h2`
+interface VisibilityProps {
+  $visible: boolean;
+}
+
+export const HeroSectionSubtitle = styled.h2<VisibilityProps>`
   font-size: 18px;
   font-weight: lighter;
   margin-bottom: 50px;
+  opacity: ${({ $visible }) => ($visible ? 1 : 0)};
+  transition: opacity 0.5s ease-out;
 
   @media (max-width: 768px) {
     font-size: 16px;
   }
+`;
+
+export const AnimatedButton = styled.div<VisibilityProps>`
+  opacity: ${({ $visible }) => ($visible ? 1 : 0)};
+  transition: opacity 0.5s ease-out;
 `;
