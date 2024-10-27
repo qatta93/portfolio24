@@ -4,7 +4,7 @@ export const AboutSectionWrapper = styled.section`
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: ${({ theme }) => theme.colors.secondary};
+  background-color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const AboutSectionContainer = styled.div`
@@ -15,7 +15,6 @@ export const AboutSectionContainer = styled.div`
   justify-content: space-between;
   max-width: ${({ theme }) => theme.maxWidth};
   margin: 0 auto;
-  background-color: white;
   margin: 20px 0;
   border-radius: 20px;
 
@@ -25,4 +24,3 @@ export const AboutSectionContainer = styled.div`
     align-items: center;
   }
 `;
-

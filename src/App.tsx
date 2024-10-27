@@ -15,14 +15,14 @@ function App() {
       setIsExiting(true);
       setTimeout(() => {
         setIsLoading(false);
-      }, 800); 
+      }, 800);
     };
 
-    if (document.readyState === 'complete') {
+    if (document.readyState === "complete") {
       handleLoad();
     } else {
-      window.addEventListener('load', handleLoad);
-      return () => window.removeEventListener('load', handleLoad);
+      window.addEventListener("load", handleLoad);
+      return () => window.removeEventListener("load", handleLoad);
     }
   }, []);
 
@@ -31,8 +31,8 @@ function App() {
       {isLoading && <Loader isExiting={isExiting} />}
       <Layout>
         <HeroSection />
-        <AboutSection />
         <ProjectsSection />
+        <AboutSection />
         <ContactSection />
       </Layout>
     </>
