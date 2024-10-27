@@ -10,6 +10,7 @@ import { ProjectsSectionType } from "./ProjectsSection.type";
 import projects from "./projects.json";
 import "swiper/css";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { useState } from "react";
 
 export const ProjectsSection: ProjectsSectionType = () => {
   return (

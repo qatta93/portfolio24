@@ -1,11 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const SplineModelWrapper = styled.section`
-  width: 100%;
-  max-width: 600px;
+export const SplineWrapper = styled.div`
   position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
 
-  @media (max-width: 768px) {
-    max-width: 400px;
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
   }
 `;

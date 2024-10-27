@@ -62,13 +62,19 @@
   },
   {
     "id": 4,
+    "title": "Portfolio - old",
+    "technologies": ["Figma", "Next.js", "TypeScript", "Tailwind"],
+    "description": "My previous portfolio that was created in 2022.",
+    "img": "images/portfolio-old.png",
+    "links": [
+      { "github": "https://github.com/qatta93/portfolio22" },
+      { "live": "https://portfolio23-nu.vercel.app/" }
+    ]
+  },
+  {
+    "id": 5,
     "title": "Portfolio",
-    "technologies": [
-      "Figma",
-      "React",
-      "TypeScript",
-      "Styled Components"
-    ],
+    "technologies": ["Figma", "React", "TypeScript", "Styled Components"],
     "description": "That's the website that you are currently looking on :)",
     "img": "images/homia.png",
     "links": [
@@ -76,14 +82,12 @@
       { "live": "https://portfolio24-swart.vercel.app/" }
     ]
   },
-    {
-      "id": 5,
-      "title": "Rent Croatia",
-      "technologies": ["Wordpress", "Photoshop"],
-      "description": "Commercial website with a search engine for holiday accommodation.",
-      "img": "images/rent-croatia.png",
-      "links": [
-        { "live": "https://rent-croatia.com/" }
-      ]
-    }
+  {
+    "id": 5,
+    "title": "Rent Croatia",
+    "technologies": ["Wordpress", "Photoshop"],
+    "description": "Commercial website with a search engine for holiday accommodation.",
+    "img": "images/rent-croatia.png",
+    "links": [{ "live": "https://rent-croatia.com/" }]
+  }
 ]
