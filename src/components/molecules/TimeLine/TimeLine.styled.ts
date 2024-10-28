@@ -18,8 +18,9 @@ export const StyledVerticalTimeline = styled(VerticalTimeline)`
     height: 30px !important;
     margin-left: -15px !important;
   }
-
-  .vertical-timeline-element {
-    margin: 50px 0 !important;
+  @media only screen and (min-width: 1170px) {
+    .vertical-timeline.vertical-timeline--two-columns {
+      width: 70% !important;
+    }
   }
 `;

@@ -86,13 +86,14 @@ export const TimeLine: TimeLineType = () => {
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="2019 - 2022"
+        date="2015 - 2021"
         iconStyle={{ background: "rgba(179, 255, 182, 1)" }}>
         <h3 className="vertical-timeline-element-title">
-          Architect, Product Owner
+          Architect, Product Owner, Civil Engineer
         </h3>
-        <h4 className="vertical-timeline-element-subtitle">self-employed</h4>
-        <h4 className="vertical-timeline-element-subtitle">Warsaw, Poland</h4>
+        <h4 className="vertical-timeline-element-subtitle">
+          Poland, Germany, New Zealand
+        </h4>
         <ul>
           <li>creating a brand of a company that sells prefabricated houses</li>
           <li>
@@ -104,19 +105,6 @@ export const TimeLine: TimeLineType = () => {
             programming (Adobe XD, HTML, CSS, JavaScript, React)
           </li>
           <li>collaborating with clients and multidisciplinary teams </li>
-        </ul>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="2015-2029"
-        iconStyle={{ background: "rgba(179, 255, 182, 1)" }}>
-        <h3 className="vertical-timeline-element-title">
-          Architect / Civil Engineer
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          New Zealand, England, Germany, Poland
-        </h4>
-        <ul>
           <li>creating mockups and 3D models with an aesthetic sense</li>
           <li>thinking analytically and solving engineering problems</li>
           <li>working with multicultural and multidisciplinary teams</li>
@@ -135,10 +123,8 @@ export const TimeLine: TimeLineType = () => {
         <h4 className="vertical-timeline-element-subtitle">Lublin, Poland</h4>
         <ul>
           <li>
-            Activities and societies: During my studies I was a
-            year-representative and I got a scholarship. Diploma thesis topic:
-            "The structural project of a self-sufficient timber frame house on
-            "Rajska" island in BIM technology".
+            During my studies I was a year-representative and I got a
+            scholarship.
           </li>
         </ul>
       </VerticalTimelineElement>
@@ -153,7 +139,6 @@ export const TimeLine: TimeLineType = () => {
           University of Life Sciences
         </h3>
         <h4 className="vertical-timeline-element-subtitle">Lublin, Poland</h4>
-        <p>Specialisation: Parks and gardens.</p>
       </VerticalTimelineElement>
     </StyledVerticalTimeline>
   );

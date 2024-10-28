@@ -4,8 +4,9 @@ import { SwiperSlide, Swiper } from "swiper/react";
 export const ProjectsSectionWrapper = styled.section`
   width: 100%;
   height: 100%;
-  background-color: ${({ theme }) => theme.colors.secondary};
+  background-color: ${({ theme }) => theme.colors.primary};
   flex-direction: column;
+c
 `;
 
 export const ProjectCardsContainer = styled.article`
