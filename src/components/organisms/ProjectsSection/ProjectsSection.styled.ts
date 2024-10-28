@@ -5,7 +5,6 @@ export const ProjectsSectionWrapper = styled.section`
   width: 100%;
   height: 100%;
   background-color: ${({ theme }) => theme.colors.secondary};
-  max-width: ${({ theme }) => theme.maxWidth};
   flex-direction: column;
 `;
 
@@ -16,6 +15,7 @@ export const ProjectCardsContainer = styled.article`
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  max-width: ${({ theme }) => theme.maxWidth};
 `;
 
 export const StyledSwiperSlide = styled(SwiperSlide)`
@@ -41,20 +41,20 @@ export const StyledSwiper = styled(Swiper)`
     display: flex;
     gap: 10px;
     justify-content: center;
-    margin: 20px 0 20px 0;
+    margin: 40px 0 40px 0;
   }
   .swiper-pagination-bullet {
     display: block;
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: white;
     opacity: 1;
     width: 20px;
     height: 20px;
-    border: 1px solid ${({ theme }) => theme.colors.darkGray};
+    border: 1px solid ${({ theme }) => theme.colors.lightGray};
     border-radius: 20px;
     cursor: pointer;
   }
 
   .swiper-pagination-bullet-active {
-    background-color: ${({ theme }) => theme.colors.darkGray};
+    background-color: ${({ theme }) => theme.colors.violet};
   }
 `;

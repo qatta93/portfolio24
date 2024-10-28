@@ -7,6 +7,7 @@ export const ProjectCardWrapper = styled.section`
   height: 530px;
   border-radius: 20px;
   padding: 10px;
+  box-shadow: ${({ theme }) => theme.colors.shadow} 0px 8px 24px;
 `;
 
 export const StyledImage = styled.img`

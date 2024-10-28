@@ -9,6 +9,7 @@ const theme = {
     lightGray: "#b3b3b3",
     darkGray: "#a5a5a5",
     violet: "#873FBF",
+    shadow: "rgba(149, 157, 165, 0.2)",
   },
   fonts: {
     default: "Poppins, sans-serif",

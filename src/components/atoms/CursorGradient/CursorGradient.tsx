@@ -22,19 +22,18 @@ const CursorGradient: React.FC = () => {
     const updateCursor = (e: MouseEvent) => {
       setPosition({ x: e.clientX, y: e.clientY });
       
-      // Get element under cursor
       const element = document.elementFromPoint(e.clientX, e.clientY);
       if (element) {
         const computedStyle = window.getComputedStyle(element);
         const backgroundColor = computedStyle.backgroundColor;
         
-        // Check if background is similar to secondary color (rgba(179, 255, 182, 0.8))
+
         if (backgroundColor.startsWith('rgba')) {
           const values = backgroundColor.match(/[\d.]+/g);
           if (values && 
-              Math.abs(parseInt(values[0]) - 179) < 5 && // Red
-              Math.abs(parseInt(values[1]) - 255) < 5 && // Green
-              Math.abs(parseInt(values[2]) - 182) < 5) { // Blue
+              Math.abs(parseInt(values[0]) - 179) < 5 && 
+              Math.abs(parseInt(values[1]) - 255) < 5 && 
+              Math.abs(parseInt(values[2]) - 182) < 5) { 
             setIsOverSecondary(true);
           } else {
             setIsOverSecondary(false);

@@ -9,40 +9,33 @@ export const TimeLine: TimeLineType = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2023 - present"
-        iconStyle={{ background: "var(--yellow)" }}>
+        iconStyle={{ background: "rgba(179, 255, 182, 1)" }}>
         <h3 className="vertical-timeline-element-title">Frontend Developer</h3>
         <h4 className="vertical-timeline-element-subtitle">{`Self Employed`}</h4>
         <h4 className="vertical-timeline-element-subtitle">Warsaw, Poland</h4>
         <ul>
           <li>
-            creating Web Applications from scratch and developing existing ones
-            with new functionalities using React, Next.js and Redux in a
-            scalable way
+            create web applications from scratch and enhance existing ones using
+            React, Next.js, and Redux
           </li>
           <li>
-            collaborating with Project Managers, BE developers, BA, UX/UI
-            (auditing UX design from a tech perspective and giving insights),
-            and consultation with clients to deliver user-centered and highly
-            performant Web App
+            collaborate with project managers, backend developers, and UX/UI
+            teams to deliver user-centered, high-performance apps
           </li>
           <li>
-            integrating B2C websites with headless CMS to allow content editors
-            easily maintain a website
+            integrate B2C websites with headless CMS for easy content management
           </li>
           <li>
-            actively participating in scrum meetings (backlog refinement, sprint
-            planning, retro)
+            actively participate in scrum meetings, including backlog refinement
+            and sprint planning
           </li>
-          <li>
-            considering SEO practices to enhance the website's search engine
-            visibility
-          </li>
+          <li>consider SEO practices to improve search engine visibility</li>
         </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2021 - 2023"
-        iconStyle={{ background: "var(--yellow)" }}>
+        iconStyle={{ background: "rgba(179, 255, 182, 1)" }}>
         <h3 className="vertical-timeline-element-title">
           Software Developer Consultant
         </h3>
@@ -51,57 +44,50 @@ export const TimeLine: TimeLineType = () => {
           Oslo, Norway (remote)
         </h4>
         <ul>
+          <li>identify and prioritize key frontend features for the MVP</li>
           <li>
-            identifying and prioritizing the most crucial frontend features for
-            the MVP based on user needs and business goals
+            implement complex design mockups and wireframes with Storybook
           </li>
           <li>
-            implementing complex design mockups and wireframes using Storybook,
-            maintaining design fidelity and usability
+            use browser developer tools to diagnose frontend issues and optimize
+            performance
           </li>
           <li>
-            utilizing browser developer tools to diagnose and debug frontend
-            issues, optimizing performance, and troubleshooting layout problems
+            develop interactive elements with JavaScript and React to enhance
+            user engagement through animations
           </li>
           <li>
-            developing interactive elements using JavaScript and React,
-            enhancing user engagement through animations, transitions, and
-            real-time updates
+            integrate with backend services by consuming RESTful APIs to fetch
+            dynamic content
           </li>
           <li>
-            integrating with backend services by consuming RESTful APIs to fetch
-            and display dynamic content
+            participate in UI design and prototyping to visualize and iterate on
+            user interfaces for usability
           </li>
-          <li>
-            participating in UI design and interactive prototypes to visualize
-            and iterate on user interfaces, ensuring usability and efficiency
-            before full development
-          </li>
-          <li>
-            prioritizing responsive design across a range of devices (mobile
-            first)
-          </li>
+          <li>prioritize responsive design for a range of devices</li>
         </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2021-2022"
-        iconStyle={{ background: "white" }}>
+        iconStyle={{ background: "rgba(179, 255, 182, 1)" }}>
         <h3 className="vertical-timeline-element-title">
           Leadership training workshop
         </h3>
         <h4 className="vertical-timeline-element-subtitle">online</h4>
-        <p>
-          The entire program took 100 hours. It was divided into 5 practical
-          modules: leader person, leadership communication, team leader,
-          leadership tools and design tools. The course was designed to increase
-          soft skills and working in a team.
-        </p>
+        <ul>
+          <li>
+            The entire program took 100 hours. It was divided into 5 practical
+            modules: leader person, leadership communication, team leader,
+            leadership tools and design tools. The course was designed to
+            increase soft skills and working in a team.
+          </li>
+        </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2019 - 2022"
-        iconStyle={{ background: "#efeff0" }}>
+        iconStyle={{ background: "rgba(179, 255, 182, 1)" }}>
         <h3 className="vertical-timeline-element-title">
           Architect, Product Owner
         </h3>
@@ -110,10 +96,6 @@ export const TimeLine: TimeLineType = () => {
         <ul>
           <li>creating a brand of a company that sells prefabricated houses</li>
           <li>
-            researching the market, looking for new solutions and taking into
-            account the needs of customers
-          </li>
-          <li>
             constantly devising automation solutions (for instance - an online
             configurator in order to help clients with cost estimation)
           </li>
@@ -121,13 +103,13 @@ export const TimeLine: TimeLineType = () => {
             creating a website from scratch - from logo, graphic design to
             programming (Adobe XD, HTML, CSS, JavaScript, React)
           </li>
-          <li>collaborating with clients and multidisciplinary teams</li>
+          <li>collaborating with clients and multidisciplinary teams </li>
         </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2015-2029"
-        iconStyle={{ background: "#efeff0" }}>
+        iconStyle={{ background: "rgba(179, 255, 182, 1)" }}>
         <h3 className="vertical-timeline-element-title">
           Architect / Civil Engineer
         </h3>
@@ -143,7 +125,7 @@ export const TimeLine: TimeLineType = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2013-2019"
-        iconStyle={{ background: "white" }}>
+        iconStyle={{ background: "rgba(179, 255, 182, 1)" }}>
         <h3 className="vertical-timeline-element-title">
           Bachelor of Civil Engineering
         </h3>
@@ -151,17 +133,19 @@ export const TimeLine: TimeLineType = () => {
           Lublin University of Technology
         </h3>
         <h4 className="vertical-timeline-element-subtitle">Lublin, Poland</h4>
-        <p>
-          Activities and societies: During my studies I was a
-          year-representative and I got a scholarship. Diploma thesis topic:
-          "The structural project of a self-sufficient timber frame house on
-          "Rajska" island in BIM technology".
-        </p>
+        <ul>
+          <li>
+            Activities and societies: During my studies I was a
+            year-representative and I got a scholarship. Diploma thesis topic:
+            "The structural project of a self-sufficient timber frame house on
+            "Rajska" island in BIM technology".
+          </li>
+        </ul>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2012-2016"
-        iconStyle={{ background: "white" }}>
+        iconStyle={{ background: "rgba(179, 255, 182, 1)" }}>
         <h3 className="vertical-timeline-element-title">
           Bachelor of Landscape Architecture
         </h3>
