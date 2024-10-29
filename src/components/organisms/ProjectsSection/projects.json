@@ -1,6 +1,42 @@
 [
   {
     "id": 1,
+    "title": "Noterat.io",
+    "technologies": ["Figma", "React Native", "Node"],
+    "description": "It's a user-friendly application that distributes and analyzes the data on the Swedish Parliaments API. The aim is to create an informative and neutral platform where the users can easily access and control specific documents and political activity.",
+    "img": "images/noterat.png",
+    "links": [
+      {
+        "figma": "https://www.figma.com/file/cU8u60tRB7Ms8nir4ZhVaH/noterat.io?node-id=0%3A1&t=rrv0I4GUN4q3iFJd-1"
+      },
+      { "live": "https://www.noterat.io/" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Travel Buddy",
+    "technologies": [
+      "React",
+      "Redux",
+      "TypeScript",
+      "Node.JS",
+      "Express.JS",
+      "OAuth",
+      "PostreSQL",
+      "Docker"
+    ],
+    "description": "The apps was conceived for travelers that wish to find a buddy to travel with. They can either create trips and wait for people to join them, or search through other people's trips.",
+    "img": "images/travelbuddy.png",
+    "links": [
+      {
+        "figma": "https://www.figma.com/file/jfO04g9WdOwZs3lWBxPOPl/Travel-Buddy?node-id=0%3A1&t=iJ2FNima8qsq8l4O-1"
+      },
+      { "github": "https://github.com/qatta93/travel_buddy" },
+      { "live": "https://travel-buddy-application.netlify.app/" }
+    ]
+  },
+  {
+    "id": 3,
     "title": "3D SHOP",
     "technologies": [
       "Figma",
@@ -23,58 +59,24 @@
     ]
   },
   {
-    "id": 2,
-    "title": "Travel Buddy",
-    "technologies": [
-      "React",
-      "Redux",
-      "TypeScript",
-      "Node.JS",
-      "Express.JS",
-      "Passport.JS",
-      "OAuth",
-      "PostreSQL",
-      "Docker",
-      "Heroku"
-    ],
-    "description": "My colleagues and I did that project from scratch in 10 days. It was conceived for travelers that wish to find a buddy to travel with. They can either create trips and wait for people to join them, or search through other people's trips.",
-    "img": "images/travelbuddy.png",
-    "links": [
-      {
-        "figma": "https://www.figma.com/file/jfO04g9WdOwZs3lWBxPOPl/Travel-Buddy?node-id=0%3A1&t=iJ2FNima8qsq8l4O-1"
-      },
-      { "github": "https://github.com/qatta93/travel_buddy" },
-      { "live": "https://travel-buddy-application.netlify.app/" }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Noterat.io",
-    "technologies": ["Figma", "React Native", "Node"],
-    "description": "It's a user-friendly application that distributes and analyzes the available data on the Swedish Parliaments (Riksdag) API and website. The aim is to create an informative and neutral platform where the users can easily access and control specific documents and political activity without ending up in filter bubbles.",
-    "img": "images/noterat.png",
-    "links": [
-      {
-        "figma": "https://www.figma.com/file/cU8u60tRB7Ms8nir4ZhVaH/noterat.io?node-id=0%3A1&t=rrv0I4GUN4q3iFJd-1"
-      },
-      { "live": "https://www.noterat.io/" }
-    ]
-  },
-  {
     "id": 4,
-    "title": "Portfolio - old",
-    "technologies": ["Figma", "Next.js", "TypeScript", "Tailwind"],
-    "description": "My previous portfolio that was created in 2022.",
-    "img": "images/portfolio-old.png",
-    "links": [
-      { "github": "https://github.com/qatta93/portfolio22" },
-      { "live": "https://portfolio23-nu.vercel.app/" }
-    ]
+    "title": "Rent Croatia",
+    "technologies": ["Wordpress", "Photoshop"],
+    "description": "Commercial website with a search engine for holiday accommodation.",
+    "img": "images/rent-croatia.png",
+    "links": [{ "live": "https://rent-croatia.com/" }]
   },
   {
     "id": 5,
     "title": "Portfolio",
-    "technologies": ["Figma", "React", "TypeScript", "Styled Components"],
+    "technologies": [
+      "Figma",
+      "React",
+      "TypeScript",
+      "Styled Components",
+      "AI Tools",
+      "Spline"
+    ],
     "description": "That's the website that you are currently looking on :)",
     "img": "images/homia.png",
     "links": [
@@ -83,11 +85,14 @@
     ]
   },
   {
-    "id": 5,
-    "title": "Rent Croatia",
-    "technologies": ["Wordpress", "Photoshop"],
-    "description": "Commercial website with a search engine for holiday accommodation.",
-    "img": "images/rent-croatia.png",
-    "links": [{ "live": "https://rent-croatia.com/" }]
+    "id": 6,
+    "title": "Portfolio - old",
+    "technologies": ["Figma", "Next.js", "TypeScript", "Tailwind"],
+    "description": "My previous portfolio that was created in 2022.",
+    "img": "images/portfolio-old.png",
+    "links": [
+      { "github": "https://github.com/qatta93/portfolio22" },
+      { "live": "https://portfolio23-nu.vercel.app/" }
+    ]
   }
 ]

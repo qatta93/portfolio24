@@ -4,7 +4,7 @@ export const ProjectCardWrapper = styled.section`
   position: relative;
   background-color: white;
   width: 350px;
-  height: 530px;
+  height: 510px;
   border-radius: 20px;
   padding: 10px;
   box-shadow: ${({ theme }) => theme.colors.shadow} 0px 8px 24px;
