@@ -5,7 +5,7 @@ export const AboutSectionWrapper = styled.section`
   width: 100%;
   height: 100%;
   background-color: ${({ theme }) => theme.colors.primary};
-  margin-top: 100px !important;
+  margin-bottom: 30px !important;
 `;
 
 export const AboutSectionContainer = styled.div`
