@@ -24,8 +24,8 @@ export const TECHNOLOGIES = [
     icon: "/images/tech/threejs.svg",
   },
   {
-    name: "git",
-    icon: "/images/tech/git.png",
+    name: "Next JS",
+    icon: "/images/tech/next-js.svg",
   },
   {
     name: "figma",
