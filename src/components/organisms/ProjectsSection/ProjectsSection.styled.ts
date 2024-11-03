@@ -32,6 +32,20 @@ export const OverviewContainer = styled.div`
   }
 `;
 
+export const TechnologiesContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-left: 80px;
+  gap: 2rem;
+`;
+
+export const TechnologyItem = styled.div`
+  width: 6rem;
+  height: 6rem;
+`;
+
 export const StyledSwiperSlide = styled(SwiperSlide)`
   width: 350px !important;
   transition: all 0.3s ease;

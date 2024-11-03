@@ -6,13 +6,15 @@ import {
   StyledSwiperSlide,
   StyledSwiper,
   OverviewContainer,
+  TechnologiesContainer,
+  TechnologyItem,
 } from "./ProjectsSection.styled";
-import { ProjectsSectionType } from "./ProjectsSection.type";
-import projects from "./projects.json";
 import "swiper/css";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { useTheme } from "styled-components";
 import { useEffect, useState } from "react";
+import BallCanvas from "../../atoms/Canvas/Ball";
+import { TECHNOLOGIES, PROJECTS } from "../../../constants/index";
 
 export const ProjectsSection: React.FC = () => {
   const theme = useTheme();
@@ -48,11 +50,18 @@ export const ProjectsSection: React.FC = () => {
           <span>TypeScript</span> for type safety and <span>Tailwind</span> for
           styling. My experience includes <span>Three.js</span> for 3D graphics,{" "}
           <span>Figma</span> for design and <span>Wordpress</span>. I also have
-          basic knowledge of backend technologies, including{" "}
+          basic knowledge of backend technologies and databases, including{" "}
           <span>Next Auth</span>, <span>Node.js</span>, and <span>Prisma</span>{" "}
           or <span>SQL</span>.
         </p>
       </OverviewContainer>
+      <TechnologiesContainer>
+        {TECHNOLOGIES.map((technology) => (
+          <TechnologyItem key={technology.name}>
+            <BallCanvas icon={technology.icon} />
+          </TechnologyItem>
+        ))}
+      </TechnologiesContainer>
       <ProjectCardsContainer>
         <StyledSwiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -65,7 +74,7 @@ export const ProjectsSection: React.FC = () => {
             clickable: true,
           }}
           scrollbar={{ draggable: true }}>
-          {projects.map(({ title, technologies, img, links, description }) => (
+          {PROJECTS.map(({ title, technologies, img, links, description }) => (
             <StyledSwiperSlide key={title}>
               <ProjectCard
                 title={title}
