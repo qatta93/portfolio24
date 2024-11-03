@@ -15,14 +15,14 @@ export const TitleContainer = styled.div`
     position: absolute;
     top: 50%;
     left: 0;
-    border-top: 2px solid ${({ theme }) => theme.colors.violet};
+    border-top: 2px solid ${({ theme }) => theme.colors.orange};
     width: 60px;
     transform: translateY(-50%);
   }
 `;
 
 export const SectionTitle = styled.h3`
-  color: ${({ theme }) => theme.colors.violet};
+  color: ${({ theme }) => theme.colors.orange};
   font-size: 24px;
   margin: 0 0 0 90px;
   text-transform: uppercase;

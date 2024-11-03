@@ -5,6 +5,7 @@ import {
   ProjectCardsContainer,
   StyledSwiperSlide,
   StyledSwiper,
+  OverviewContainer,
 } from "./ProjectsSection.styled";
 import { ProjectsSectionType } from "./ProjectsSection.type";
 import projects from "./projects.json";
@@ -40,6 +41,18 @@ export const ProjectsSection: React.FC = () => {
         sectionTitle="projects"
         description="Some things that I've been working on."
       />
+      <OverviewContainer>
+        <p>
+          I leverage <span>AI tools</span> to build applications with{" "}
+          <span>React</span> and <span>Next.js</span>. I use{" "}
+          <span>TypeScript</span> for type safety and <span>Tailwind</span> for
+          styling. My experience includes <span>Three.js</span> for 3D graphics,{" "}
+          <span>Figma</span> for design and <span>Wordpress</span>. I also have
+          basic knowledge of backend technologies, including{" "}
+          <span>Next Auth</span>, <span>Node.js</span>, and <span>Prisma</span>{" "}
+          or <span>SQL</span>.
+        </p>
+      </OverviewContainer>
       <ProjectCardsContainer>
         <StyledSwiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}

@@ -8,7 +8,7 @@ const theme = {
     lightBlack: "#1E1E1E",
     lightGray: "#b3b3b3",
     darkGray: "#a5a5a5",
-    violet: "#ff8709",
+    orange: "#ff8709",
     shadow: "rgba(149, 157, 165, 0.2)",
   },
   fonts: {

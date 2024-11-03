@@ -20,6 +20,18 @@ export const ProjectCardsContainer = styled.article`
   overflow: hidden;
 `;
 
+export const OverviewContainer = styled.div`
+  font-size: 15px;
+  line-height: 22px;
+  padding: 20px;
+  margin-left: 70px;
+  max-width: 60dvw;
+
+  span {
+    font-weight: 600;
+  }
+`;
+
 export const StyledSwiperSlide = styled(SwiperSlide)`
   width: 350px !important;
   transition: all 0.3s ease;
