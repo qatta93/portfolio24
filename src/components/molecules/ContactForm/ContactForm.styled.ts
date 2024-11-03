@@ -13,48 +13,58 @@ export const StyledLottie = styled(Lottie)`
   height: 200px;
 `;
 
-export const ContactFormComponent = styled.form`
+export const Container = styled.div`
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  background-color: ${({ theme }) => theme.colors.primary};
+  border-radius: 20px;
+`;
+
+export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 22px;
+  font-size: 16px;
+`;
+
+export const Label = styled.span``;
+
+export const InputWrapper = styled.div`
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
   position: relative;
-  gap: 20px;
+  flex: 1;
+`;
+
+export const InputWrapperLocation = styled(InputWrapper)`
+  margin-bottom: 30px;
+  justify-content: end;
+  input {
+    flex-grow: 0;
+    width: 130px;
+  }
+`;
+
+export const StyledInput = styled.input`
+  border: 0;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.orange};
+  background: transparent;
+  color: ${({ theme }) => theme.colors.orange};
+  outline: none;
+  flex-grow: 1;
+`;
+
+export const StyledTextarea = styled.textarea`
+  border: 0;
   width: 100%;
-  height: auto;
-  border-radius: 20px;
-  padding: 40px;
-  box-sizing: border-box;
-  background-color: ${({ theme }) => theme.colors.primary};
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    padding: 30px;
-
-  }
-`;
-
-const inputsStyle = css`
-  background-color: ${({ theme }) => theme.colors.primary};
-  font-size: 14px;
-  border-radius: 20px;
-  border: none;
-  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
-
-  &:focus {
-    background-color: white;
-    outline: 1px solid ${({ theme }) => theme.colors.darkSecondary};
-  }
-`;
-
-export const FormInput = styled.input`
-  ${inputsStyle}
-  padding: 10px 10px 10px 20px;
-  height: 40px;
-`;
-
-export const FormTextArea = styled.textarea`
-  ${inputsStyle}
-  padding: 25px 10px 10px 20px;
-  height: 150px;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.orange};
+  background: transparent;
+  min-height: 100px;
+  resize: none;
+  color: ${({ theme }) => theme.colors.orange};
+  outline: none;
 `;
 
 export const Loader = styled.span`
@@ -88,4 +98,5 @@ export const StyledButton = styled(Button)`
   font-size: 18px;
   padding: 10px 40px;
   margin: 0 auto;
+  background-color: ${({ theme }) => theme.colors.primary};
 `;
