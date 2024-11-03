@@ -67,4 +67,13 @@ export const StyledVerticalTimeline = styled(VerticalTimeline)`
       text-align: left !important;
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    p,
+    li {
+      line-height: 16px;
+      font-size: 12px;
+      margin: 5px 0 !important;
+    }
+  }
 `;

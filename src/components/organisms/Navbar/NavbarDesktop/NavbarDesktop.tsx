@@ -1,5 +1,5 @@
 import { NavbarLinks } from "../../../atoms/NavbarLinks";
-import { NavbarDesktopWrapper, LogoPlaceholder } from "./NavbarDesktop.styled";
+import { NavbarDesktopWrapper, Logo } from "./NavbarDesktop.styled";
 import { useEffect, useState } from "react";
 
 export const NavbarDesktop = () => {
@@ -21,7 +21,7 @@ export const NavbarDesktop = () => {
 
   return (
     <NavbarDesktopWrapper $visible={visible}>
-      <LogoPlaceholder>LOGO</LogoPlaceholder>
+      <Logo src="/images/logo.png" alt="Logo" />
       <NavbarLinks />
     </NavbarDesktopWrapper>
   );

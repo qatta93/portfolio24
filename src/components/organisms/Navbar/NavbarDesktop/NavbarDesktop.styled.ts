@@ -18,18 +18,17 @@ export const NavbarDesktopWrapper = styled.header<NavbarDesktopWrapperProps>`
   background-color: ${({ theme }) => theme.colors.primary};
   z-index: ${({ theme }) => theme.zIndex.navigation};
   transition: transform 0.3s ease;
-  transform: translateY(${({ $visible }) => ($visible ? '0' : '-100%')});
+  transform: translateY(${({ $visible }) => ($visible ? "0" : "-100%")});
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
     padding: ${({ theme }) => theme.paddingHorizontal.tablet};
   }
 `;
 
-export const LogoPlaceholder = styled.div`
-  font-size: 24px;
-  font-weight: bold;
-  color: ${({ theme }) => theme.colors.text};
-  letter-spacing: 2px;
+export const Logo = styled.img`
+  height: 80px;
+  width: auto;
+  object-fit: contain;
 `;
 
 export const Navbar = styled.nav`
