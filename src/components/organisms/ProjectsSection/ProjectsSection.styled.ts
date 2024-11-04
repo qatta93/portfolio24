@@ -37,9 +37,8 @@ export const TechnologiesContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: start;
-  margin-left: 80px;
-  gap: 2rem;
+  justify-content: center;
+  gap: 20px;
 `;
 
 export const TechnologyItem = styled.div`

@@ -16,9 +16,11 @@ export const ProjectCard: ProjectCardType = ({
   technologies,
   description,
   links,
+  isActive,
+  onClick,
   ...props
 }) => (
-  <ProjectCardWrapper {...props}>
+  <ProjectCardWrapper onClick={onClick} isActive={isActive} {...props}>
     <StyledImage src={image} />
     <>
       <ProjectTitle>{title}</ProjectTitle>
@@ -38,7 +40,9 @@ export const ProjectCard: ProjectCardType = ({
             key={link}
             href={link}
             linkType={linkType}
-            target="_blank">
+            target="_blank"
+            onClick={(e) => e.stopPropagation()} // Prevent card click when clicking links
+          >
             {(linkType === "live" && linkType) || (
               <img src={`images/${linkType}.png`} alt={linkType} />
             )}

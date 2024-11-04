@@ -1,13 +1,27 @@
 import styled from "styled-components";
 
-export const ProjectCardWrapper = styled.section`
+export const ProjectCardWrapper = styled.section<{ isActive?: boolean }>`
   position: relative;
   background-color: white;
   width: 350px;
   height: 520px;
   border-radius: 20px;
   padding: 10px;
-  box-shadow: ${({ theme }) => theme.colors.shadow} 0px 8px 24px;
+  box-shadow: ${({ theme }) => `${theme.colors.shadow} 0px 8px 24px`};
+  transition: all 0.3s ease;
+  cursor: pointer;
+  transform-origin: center;
+
+  &:hover {
+    transform: ${({ isActive }) => !isActive && "translateY(-5px)"};
+  }
+
+  ${({ isActive }) =>
+    isActive &&
+    `
+    transform: translateY(-10px) scale(1.05);
+    z-index: 1;
+    `}
 `;
 
 export const StyledImage = styled.img`

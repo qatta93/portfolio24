@@ -7,6 +7,8 @@ interface ProjectCardProps {
   technologies: Array<string>;
   description: string;
   links: Array<object>;
+  isActive?: boolean;
+  onClick?: () => void;
 }
 
 export type ProjectCardType = (props: ProjectCardProps) => ReactElement;

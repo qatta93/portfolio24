@@ -12,14 +12,17 @@ import {
 import "swiper/css";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { useTheme } from "styled-components";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import BallCanvas from "../../atoms/Canvas/Ball";
 import { TECHNOLOGIES, PROJECTS } from "../../../constants/index";
+import { Swiper } from "swiper";
 
 export const ProjectsSection: React.FC = () => {
   const theme = useTheme();
   const [slidesPerView, setSlidesPerView] = useState<number | "auto">("auto");
   const [initialSlide, setInitialSlide] = useState(1);
+  const [activeCardIndex, setActiveCardIndex] = useState<number | null>(null);
+  const swiperRef = useRef<Swiper | null>(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -36,6 +39,17 @@ export const ProjectsSection: React.FC = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [theme.breakpoints.mobile]);
+
+  const handleCardClick = (index: number) => {
+    if (activeCardIndex === index) {
+      setActiveCardIndex(null);
+    } else {
+      setActiveCardIndex(index);
+      if (swiperRef.current) {
+        swiperRef.current.slideTo(index, 300);
+      }
+    }
+  };
 
   return (
     <ProjectsSectionWrapper id="projects">
@@ -69,12 +83,15 @@ export const ProjectsSection: React.FC = () => {
           slidesPerView={slidesPerView}
           centeredSlides={true}
           initialSlide={initialSlide}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
           pagination={{
             dynamicBullets: true,
             clickable: true,
           }}
           scrollbar={{ draggable: true }}>
-          {PROJECTS.map(({ title, technologies, img, links, description }) => (
+          {PROJECTS.map(({ title, technologies, img, links, description }, index) => (
             <StyledSwiperSlide key={title}>
               <ProjectCard
                 title={title}
@@ -82,6 +99,8 @@ export const ProjectsSection: React.FC = () => {
                 links={links}
                 technologies={technologies}
                 description={description}
+                isActive={activeCardIndex === index}
+                onClick={() => handleCardClick(index)}
               />
             </StyledSwiperSlide>
           ))}
