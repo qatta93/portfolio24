@@ -5,7 +5,7 @@ const theme = {
     primary: "#F5F5F5",
     secondary: "rgba(179, 255, 182, 0.8)",
     darkSecondary: "#83FA88",
-    lightBlack: "#1E1E1E",
+    lightBlack: "#3e3c3c",
     lightGray: "#b3b3b3",
     darkGray: "#a5a5a5",
     orange: "#ff8709",

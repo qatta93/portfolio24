@@ -32,8 +32,8 @@ export const ProjectTechWrapper = styled.div`
 
 export const ProjectTech = styled.span`
   padding: 2px 8px;
-  border: 1px solid ${({ theme }) => theme.colors.lightGray};
-  border-radius: 10px;
+  border: 1px solid ${({ theme }) => theme.colors.shadow};
+  border-radius: 5px;
   margin: 0 5px 5px 0;
   font-size: 12px;
 `;
@@ -41,7 +41,6 @@ export const ProjectTech = styled.span`
 export const ProjectDescription = styled.p`
   margin-top: 7px;
   font-size: 14px;
-  color: ${({ theme }) => theme.colors.darkGray};
 `;
 
 export const ProjectCardLinks = styled.div`
@@ -60,15 +59,19 @@ export const LinkButton = styled.a<{ linkType: string }>`
   align-items: center;
   justify-content: center;
   padding: 8px 15px;
-  height: 43px;
+  min-height: 43px;
   border-radius: 8px;
-  color: white;
+  font-family: ${({ theme }) => theme.fonts.handWritting};
   font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   border: 1px solid ${({ theme }) => theme.colors.lightGray};
   background-color: ${(props) =>
-    (props.linkType === "figma" && props.theme.colors.primary) ||
-    (props.linkType === "github" && props.theme.colors.primary) ||
-    (props.linkType === "live" && props.theme.colors.darkSecondary)};
+    props.linkType === "live" && props.theme.colors.darkSecondary};
+
+  &:hover {
+    scale: 1.02;
+  }
 
   &:last-child {
     width: 100%;

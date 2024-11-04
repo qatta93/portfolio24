@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const SplineWrapper = styled.div`
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 700px;
+  height: 500px;
   min-height: 500px;
 
   canvas {
