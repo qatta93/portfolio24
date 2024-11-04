@@ -105,12 +105,12 @@ export const PROJECTS = [
   },
   {
     id: 4,
-    title: "Rent Croatia",
+    title: "Nespresso",
     technologies: ["Wordpress", "Photoshop"],
     description:
-      "Commercial website with a search engine for holiday accommodation.",
-    img: "images/rent-croatia.png",
-    links: [{ live: "https://rent-croatia.com/" }],
+      "The website offers capsule coffee and emphasizes sustainable consumption by promoting the recycling of used coffee capsules.",
+    img: "images/nespresso.png",
+    links: [{ live: "https://kawadlabiznesu.pl/nespresso/en/home/" }],
   },
   {
     id: 5,
@@ -122,9 +122,11 @@ export const PROJECTS = [
       "Styled Components",
       "AI Tools",
       "Spline",
+      "Three.js",
+      "Framer",
     ],
     description: "That's the website that you are currently looking on :)",
-    img: "images/homia.png",
+    img: "images/portfolio.png",
     links: [
       { github: "https://github.com/qatta93/portfolio24" },
       { live: "https://portfolio24-swart.vercel.app/" },
@@ -133,7 +135,7 @@ export const PROJECTS = [
   {
     id: 6,
     title: "Portfolio - old",
-    technologies: ["Figma", "Next.js", "TypeScript", "Tailwind"],
+    technologies: ["Figma", "Next.js", "TypeScript", "Tailwind", "Adobe"],
     description: "My previous portfolio that was created in 2022.",
     img: "images/portfolio-old.png",
     links: [
