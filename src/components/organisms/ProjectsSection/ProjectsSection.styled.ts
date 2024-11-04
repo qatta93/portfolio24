@@ -21,14 +21,15 @@ export const ProjectCardsContainer = styled.article`
 `;
 
 export const OverviewContainer = styled.div`
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
   padding: 20px;
   margin-left: 70px;
   max-width: 60dvw;
+  font-weight: 300;
 
   span {
-    font-weight: 600;
+    font-weight: 500;
   }
 `;
 
