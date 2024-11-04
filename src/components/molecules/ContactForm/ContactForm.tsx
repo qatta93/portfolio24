@@ -80,7 +80,7 @@ export const ContactForm: ContactFormType = () => {
           <Label>You can reach me at</Label>
           <StyledInput
             required
-            type="tel"
+            type="number"
             value={formData.phone}
             onChange={(e) =>
               setFormData({ ...formData, phone: e.target.value })

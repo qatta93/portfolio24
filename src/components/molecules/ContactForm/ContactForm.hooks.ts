@@ -8,23 +8,23 @@ export const useContactForm: UseContactFormType = () => {
 
   async function handleWebForm(event: React.ChangeEvent<HTMLFormElement>) {
     event.preventDefault();
+    const formData = new FormData(event.target);
+
+    const accessKey = process.env.REACT_APP_FORM_ACCESS_KEY;
+    formData.append("access_key", accessKey);
+
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        access_key: process.env.NEXT_PUBLIC_FORM_ACCESS_KEY,
-        email: event.target.email.value,
-        message: event.target.message.value,
-      }),
+      body: formData,
     });
-    const result = await response.json();
 
-    if (result.success) {
+    const data = await response.json();
+
+    if (data.success) {
       setIsSubmitted(true);
-      setIsLoading(false);
+      event.target.reset();
+    } else {
+      console.log("Error", data);
     }
   }
 
