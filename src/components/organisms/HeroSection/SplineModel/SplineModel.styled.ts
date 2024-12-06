@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const SplineWrapper = styled.div`
   position: relative;
-  width: 700px;
+  width: 800px;
+  min-width: 800px;
   height: 500px;
   min-height: 500px;
 
