@@ -19,8 +19,6 @@ export const HeroSectionContent = styled.div`
   justify-content: space-between;
   align-items: center;
   flex: 1;
-  margin-top: 80px;
-  margin-bottom: 60px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -80,7 +78,7 @@ export const LogosSection = styled.div`
   align-items: center;
   gap: 80px;
   width: 100%;
-  padding: 40px 0;
+  padding: 20px 0;
   margin-bottom: 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 

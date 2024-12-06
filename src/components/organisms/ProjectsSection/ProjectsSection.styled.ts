@@ -6,6 +6,11 @@ export const ProjectsSectionWrapper = styled.section`
   height: 100%;
   background-color: ${({ theme }) => theme.colors.primary};
   flex-direction: column;
+  padding: 0 !important;
+`;
+
+export const ProjectsIntro = styled.div`
+  padding: ${({ theme }) => theme.paddingHorizontal.desktop};
 `;
 
 export const ProjectCardsContainer = styled.article`

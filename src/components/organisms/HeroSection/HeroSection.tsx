@@ -21,30 +21,12 @@ export const HeroSection = () => {
   const [showSecondLine, setShowSecondLine] = useState(false);
   const [showSubtitle, setShowSubtitle] = useState(false);
   const [showButton, setShowButton] = useState(false);
-  const [hasScrolled, setHasScrolled] = useState(false);
-
-  const handleScroll = useCallback((event: WheelEvent) => {
-    if (!hasScrolled && event.deltaY > 0) {
-      setHasScrolled(true);
-      scrollToSection("projects");
-      window.removeEventListener("wheel", handleScroll);
-    }
-  }, [hasScrolled]);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    setTimeout(() => {
       setShowContent(true);
     }, 300);
-
-    if (!hasScrolled) {
-      window.addEventListener("wheel", handleScroll);
-    }
-
-    return () => {
-      clearTimeout(timer);
-      window.removeEventListener("wheel", handleScroll);
-    };
-  }, [handleScroll, hasScrolled]);
+  }, []);
 
   return (
     <HeroSectionWrapper>

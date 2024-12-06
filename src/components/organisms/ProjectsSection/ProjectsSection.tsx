@@ -8,6 +8,7 @@ import {
   OverviewContainer,
   TechnologiesContainer,
   TechnologyItem,
+  ProjectsIntro,
 } from "./ProjectsSection.styled";
 import "swiper/css";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
@@ -20,7 +21,7 @@ import { Swiper } from "swiper";
 export const ProjectsSection: React.FC = () => {
   const theme = useTheme();
   const [slidesPerView, setSlidesPerView] = useState<number | "auto">("auto");
-  const [initialSlide, setInitialSlide] = useState(1);
+  const [initialSlide, setInitialSlide] = useState(2);
   const [activeCardIndex, setActiveCardIndex] = useState<number | null>(null);
   const swiperRef = useRef<Swiper | null>(null);
 
@@ -31,7 +32,7 @@ export const ProjectsSection: React.FC = () => {
         setInitialSlide(0);
       } else {
         setSlidesPerView("auto");
-        setInitialSlide(3);
+        setInitialSlide(2);
       }
     };
 
@@ -53,29 +54,31 @@ export const ProjectsSection: React.FC = () => {
 
   return (
     <ProjectsSectionWrapper id="projects">
-      <SectionHeader
-        sectionTitle="projects"
-        description="Some things that I've been working on."
-      />
-      <OverviewContainer>
-        <p>
-          I leverage <span>AI tools</span> to build applications with{" "}
-          <span>React</span> and <span>Next.js</span>. I use{" "}
-          <span>TypeScript</span> for type safety and <span>Tailwind</span> for
-          styling. My experience includes <span>Three.js</span> for 3D graphics,{" "}
-          <span>Figma</span> for design and <span>Wordpress</span>. I also have
-          basic knowledge of backend technologies and databases, including{" "}
-          <span>Next Auth</span>, <span>Node.js</span>, and <span>Prisma</span>{" "}
-          or <span>SQL</span>.
-        </p>
-      </OverviewContainer>
-      <TechnologiesContainer>
-        {TECHNOLOGIES.map((technology) => (
-          <TechnologyItem key={technology.name}>
-            <BallCanvas icon={technology.icon} />
-          </TechnologyItem>
-        ))}
-      </TechnologiesContainer>
+      <ProjectsIntro>
+        <SectionHeader
+          sectionTitle="projects"
+          description="Some things that I've been working on."
+        />
+        <OverviewContainer>
+          <p>
+            I leverage <span>AI tools</span> to build applications with{" "}
+            <span>React</span> and <span>Next.js</span>. I use{" "}
+            <span>TypeScript</span> for type safety and <span>Tailwind</span>{" "}
+            for styling. My experience includes <span>Three.js</span> for 3D
+            graphics, <span>Figma</span> for design and <span>Wordpress</span>.
+            I also have basic knowledge of backend technologies and databases,
+            including <span>Next Auth</span>, <span>Node.js</span>, and{" "}
+            <span>Prisma</span> or <span>SQL</span>.
+          </p>
+        </OverviewContainer>
+        <TechnologiesContainer>
+          {TECHNOLOGIES.map((technology) => (
+            <TechnologyItem key={technology.name}>
+              <BallCanvas icon={technology.icon} />
+            </TechnologyItem>
+          ))}
+        </TechnologiesContainer>
+      </ProjectsIntro>
       <ProjectCardsContainer>
         <StyledSwiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -91,19 +94,21 @@ export const ProjectsSection: React.FC = () => {
             clickable: true,
           }}
           scrollbar={{ draggable: true }}>
-          {PROJECTS.map(({ title, technologies, img, links, description }, index) => (
-            <StyledSwiperSlide key={title}>
-              <ProjectCard
-                title={title}
-                image={img}
-                links={links}
-                technologies={technologies}
-                description={description}
-                isActive={activeCardIndex === index}
-                onClick={() => handleCardClick(index)}
-              />
-            </StyledSwiperSlide>
-          ))}
+          {PROJECTS.map(
+            ({ title, technologies, img, links, description }, index) => (
+              <StyledSwiperSlide key={title}>
+                <ProjectCard
+                  title={title}
+                  image={img}
+                  links={links}
+                  technologies={technologies}
+                  description={description}
+                  isActive={activeCardIndex === index}
+                  onClick={() => handleCardClick(index)}
+                />
+              </StyledSwiperSlide>
+            )
+          )}
         </StyledSwiper>
       </ProjectCardsContainer>
     </ProjectsSectionWrapper>

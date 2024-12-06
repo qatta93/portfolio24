@@ -20,10 +20,10 @@ export const NavbarLinks: NavbarLinksType = ({ className }) => {
         contact
       </StyledButton>
       <StyledDownloadLink
-        href="pdf/Patrycja_Panasiuk_CV_EN.pdf"
-        download="Patrycja_Panasiuk_CV_EN.pdf"
+        href="/pdf/Panasiuk_Patrycja_CV_EN.pdf"
+        download="Panasiuk_Patrycja_CV_EN.pdf"
         target="_blank">
-        <img src="images/download.png" alt="download" />
+        <img src="/images/download.png" alt="download" />
         CV
       </StyledDownloadLink>
     </Navbar>
