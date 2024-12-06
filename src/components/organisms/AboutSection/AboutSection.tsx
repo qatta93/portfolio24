@@ -14,7 +14,6 @@ export const AboutSection: AboutSectionType = () => {
         description="About the person that I have become."
       />
       <AboutSectionContainer>
-        <div></div>
         <TimeLine/>
       </AboutSectionContainer>
     </AboutSectionWrapper>

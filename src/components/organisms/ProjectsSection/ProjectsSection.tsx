@@ -29,7 +29,11 @@ export const ProjectsSection: React.FC = () => {
     const handleResize = () => {
       if (window.innerWidth <= parseInt(theme.breakpoints.mobile)) {
         setSlidesPerView(1);
-        setInitialSlide(0);
+        setInitialSlide(2);
+      }
+      if (window.innerWidth <= parseInt(theme.breakpoints.tablet)) {
+        setSlidesPerView(2);
+        setInitialSlide(2);
       } else {
         setSlidesPerView("auto");
         setInitialSlide(2);

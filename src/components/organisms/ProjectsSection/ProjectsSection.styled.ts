@@ -6,11 +6,15 @@ export const ProjectsSectionWrapper = styled.section`
   height: 100%;
   background-color: ${({ theme }) => theme.colors.primary};
   flex-direction: column;
-  padding: 0 !important;
+  padding: 50px 0 0 !important;
 `;
 
 export const ProjectsIntro = styled.div`
   padding: ${({ theme }) => theme.paddingHorizontal.desktop};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    padding: 0 20px;
+  }
 `;
 
 export const ProjectCardsContainer = styled.article`
@@ -23,6 +27,14 @@ export const ProjectCardsContainer = styled.article`
   margin-top: 50px;
   max-width: ${({ theme }) => theme.maxWidth};
   overflow: hidden;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    margin: 50px auto 0;
+  }
 `;
 
 export const OverviewContainer = styled.div`
@@ -35,6 +47,13 @@ export const OverviewContainer = styled.div`
 
   span {
     font-weight: 500;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: 12px;
+    width: 100%;
+    max-width: 100% !important;
+    margin-left: 0;
   }
 `;
 
@@ -65,8 +84,8 @@ export const StyledSwiperSlide = styled(SwiperSlide)`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-    width: 100% !important;
     padding: 0 20px;
+    width: 100% !important;
   }
 `;
 
@@ -78,6 +97,10 @@ export const StyledSwiper = styled(Swiper)`
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
     width: 100%;
     margin-left: 0;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    margin: 0 auto;
   }
 
   .swiper-wrapper {

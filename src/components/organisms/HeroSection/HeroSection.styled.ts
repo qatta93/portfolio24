@@ -78,7 +78,7 @@ export const LogosSection = styled.div`
   align-items: center;
   gap: 80px;
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
   margin-bottom: 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 
@@ -92,7 +92,7 @@ export const LogosSection = styled.div`
 
 export const LogoWrapper = styled.div`
   img {
-    height: 24px;
+    height: 16px;
     width: auto;
     filter: grayscale(100%);
     opacity: 0.25;
@@ -127,7 +127,7 @@ export const ScrollIndicator = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   cursor: pointer;
   transition: opacity 0.3s ease;
 

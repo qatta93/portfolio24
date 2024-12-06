@@ -18,6 +18,10 @@ export const TitleContainer = styled.div`
     border-top: 2px solid ${({ theme }) => theme.colors.orange};
     width: 60px;
     transform: translateY(-50%);
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+      display: none;
+    }
   }
 `;
 
@@ -28,7 +32,7 @@ export const SectionTitle = styled.h3`
   text-transform: uppercase;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    font-size: 18px;
+    margin: 0 0 0 20px;
   }
 `;
 
@@ -42,6 +46,7 @@ export const SectionDescription = styled.p<{ isContactSection: boolean }>`
       : props.theme.fonts.default};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    font-size: 30px;
+    margin: 10px 0 0 20px;
+    font-size: 20px;
   }
 `;

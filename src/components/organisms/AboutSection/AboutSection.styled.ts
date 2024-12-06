@@ -15,8 +15,7 @@ export const AboutSectionContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   max-width: ${({ theme }) => theme.maxWidth};
-  margin: 0 auto;
-  margin: 20px 0;
+  margin: 40px auto 0 !important;
   border-radius: 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}) {
