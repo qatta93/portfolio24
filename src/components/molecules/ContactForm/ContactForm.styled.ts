@@ -14,6 +14,7 @@ export const StyledLottie = styled(Lottie)`
 `;
 
 export const Container = styled.div`
+  min-width: 400px;
   max-width: 640px;
   margin: 0 auto;
   padding: 50px 40px;

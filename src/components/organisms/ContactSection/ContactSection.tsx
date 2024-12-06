@@ -12,17 +12,17 @@ export const ContactSection: ContactSectionType = () => {
   return (
     <ContactSectionWrapper id="contact">
       <ContactSectionContainer>
+        <SectionHeader
+          sectionTitle="contact"
+          description="Say Hello!"
+          isContactSection={true}
+        />
         <FormContainer>
-          <SectionHeader
-            sectionTitle="contact"
-            description="Say Hello!"
-            isContactSection={true}
-          />
           <ContactForm />
+          <AnimationContainer>
+            <img src="/images/contact.gif" alt="Contact animation" />
+          </AnimationContainer>
         </FormContainer>
-        <AnimationContainer>
-          <p>animation</p>
-        </AnimationContainer>
       </ContactSectionContainer>
     </ContactSectionWrapper>
   );
