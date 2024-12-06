@@ -10,8 +10,7 @@ export const useContactForm: UseContactFormType = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    const accessKey = process.env.REACT_APP_FORM_ACCESS_KEY;
-    formData.append("access_key", accessKey);
+    formData.append("access_key", "54da8b89-cddd-46ee-a02e-c1c6ce702692");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",

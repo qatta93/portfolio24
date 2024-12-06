@@ -51,6 +51,7 @@ export const ContactForm: ContactFormType = () => {
               setFormData({ ...formData, location: e.target.value })
             }
             placeholder="Location"
+            name="location"
           />
           <Label>{getCurrentDate()}</Label>
         </InputWrapperLocation>
@@ -63,6 +64,7 @@ export const ContactForm: ContactFormType = () => {
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             placeholder="Name*"
+            name="name"
           />
         </InputWrapper>
         <InputWrapper>
@@ -74,6 +76,7 @@ export const ContactForm: ContactFormType = () => {
               setFormData({ ...formData, company: e.target.value })
             }
             placeholder="Company*"
+            name="company"
           />
         </InputWrapper>
         <InputWrapper>
@@ -86,6 +89,7 @@ export const ContactForm: ContactFormType = () => {
               setFormData({ ...formData, phone: e.target.value })
             }
             placeholder="Phone*"
+            name="phone"
           />
         </InputWrapper>
         <InputWrapper>
@@ -98,6 +102,7 @@ export const ContactForm: ContactFormType = () => {
               setFormData({ ...formData, email: e.target.value })
             }
             placeholder="Email*"
+            name="email"
           />
         </InputWrapper>
         <InputWrapper>
@@ -108,6 +113,7 @@ export const ContactForm: ContactFormType = () => {
               setFormData({ ...formData, message: e.target.value })
             }
             placeholder="Message*"
+            name="message"
           />
         </InputWrapper>
         <Label>
