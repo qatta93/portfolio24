@@ -143,4 +143,12 @@ export const PROJECTS = [
       { live: "https://portfolio23-nu.vercel.app/" },
     ],
   },
+  {
+    id: 7,
+    title: "Rent Croatia",
+    technologies: ["Figma", "Wordpress", "PHP", "Adobe"],
+    description: "App for booking apartaments.",
+    img: "images/rent-croatia.png",
+    links: [{ live: "https://rent-croatia.com/" }],
+  },
 ];
